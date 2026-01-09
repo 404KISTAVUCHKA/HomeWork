@@ -1,0 +1,31 @@
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1250px;
+}
+.header {
+  border-bottom: 2px solid #bbbdae;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.nav-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+}
+
+.nav-list {
+  display: flex;
+  gap: 30px;
+}
+.nav__link-item {
+  list-style-type: none;
+}
+
+a{
+  color: #000;
+}
