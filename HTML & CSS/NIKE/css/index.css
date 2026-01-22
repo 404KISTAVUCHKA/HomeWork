@@ -1,10 +1,10 @@
 /* BASE */
-@import "./base/normalize.css";
-@import "./base/fonts.css";
-@import "./base/vars.css";
-@import "./base/globals.css";
+@import url("./base/normalize.css");
+@import url("./base/fonts.css");
+@import url("./base/vars.css");
+@import url("./base/globals.css");
 
 /* BLOCKS */
-@import "./Blocks/header.css";
-@import "./Blocks/menu.css";
-@import "./Blocks/burger.css"
+@import url("./Blocks/header.css");
+@import url("./Blocks/menu.css");
+@import url("./Blocks/burger.css");
