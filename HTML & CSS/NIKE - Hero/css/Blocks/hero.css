@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   /* min-width 375px; max-width 922px */
-  min-height: clamp(433px, 13.823rem + 56.49vw, 742pxd);
+  min-height: clamp(433px, 13.823rem + 56.49vw, 742px);
 }
 
 @media (width > 768px) {
@@ -149,4 +149,5 @@
 
 .hero__details-icon {
   stroke: currentColor;
+
 }
