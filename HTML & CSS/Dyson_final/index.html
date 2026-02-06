@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="shortcut icon" href="./icons/favicon-svg.svg" type="image/x-icon">
+  <script defer src="./index.js" type="module"></script>
+  <title>Dyson</title>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__position">
+
+        <div class="container__burger-logo">
+          <div class="burger__inner">
+            <button class="burger__button parent--accent burger" aria-label="Открыть меню" aria-expanded="false"
+              aria-controls="header__menu">
+              <svg class="burger-svg" width="50" height="50">
+                <use class="burger__button-icon daughter--accent" href="./icons/header-sprite.svg#burger"></use>
+                <use class="burger__button-cross daughter--accent" href="./icons/header-sprite.svg#cross"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="header__menu" id="header__menu">
+            <ul class="burger__menu-list">
+              <li class="menu__item">
+                <a class="menu__link" href="#categories">Категории</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#advantages">Наши преимущества</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#offers">Спецпредложения</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#reviews">Отзывы</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#FAQ">FAQ</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#news">Новости</a>
+              </li>
+            </ul>
+          </div>
+
+          <a class="header__logo logo" href="#">
+            <img class="header__logo-img" src="./icons/logo.svg" width="183px" height="77px" alt="Логотип Dyson">
+          </a>
+        </div>
+
+        <nav class="header__nav nav" aria-label="Главное меню">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#about-us">О нас</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#delivery&payment">Доставка и оплата</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#logProduct">Регистрация продукта</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#service">Сервис</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#certificate">Сертификаты и лицензии</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="cart__inner">
+          <button class="cart__button parent--accent" title="Покупки" aria-label="Покупки" data-modal-button="buy" data-modal-speed="300">
+            <svg class="cart-svg" width="36" height="36">
+              <use class="cart__button-icon daughter--accent" href="./icons/header-sprite.svg#cart"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ------------------------------------------------------- -->
+
+  <main class="main">
+    <section class="hero__section section">
+      <div class="container hero-container">
+        <div class="hero__wrapper">
+          <div class="hero__content">
+
+            <h1 class="hero__title">Уникальные технологии для ухода за волосами</h1>
+            <p class="hero__text">Идеальная укладка для всех типов волос вместе с Dyson</p>
+            <button class="hero__button">
+              <a class="hero__button-text" href="#">Подробнее</a>
+            </button>
+
+          </div>
+          <picture>
+            <source srcset="./images/hero/hero-woman.webp" type="image/webp">
+            <img class="hero__img" src="./images/hero/hero-woman.png"
+              alt="Девушка в черно-белом стиле держит в руке фен Dyson" width="820" height="830">
+          </picture>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------- -->
+
+    <section id="categories" class="catalog__section section">
+      <div class="container section-container">
+        <div class="catalog__wrapper">
+          <div class="catalog__grid-cards">
+
+            <article class="catalog__card">
+              <a href="#">
+                <picture>
+                  <source srcset="./images/catalog/catalog-1.webp" type="image/webp">
+                  <img class="card__product-img" src="./images/catalog/catalog-1.png"
+                    alt="Девушка укладывает волосы стайлером Dyson">
+                </picture>
+                <div class="catalog__card-content">
+                  <h2 class="card__title">Акции</h2>
+                  <button class="card__button">
+                    <p class="card__button-text">Подробнее</p>
+                  </button>
+                </div>
+              </a>
+              <div class="card__hover-bg"></div>
+            </article>
+
+            <article class="catalog__card">
+              <a href="#">
+                <picture>
+                  <source srcset="./images/catalog/catalog-2.webp" type="image/webp">
+                  <img class="card__product-img" src="./images/catalog/catalog-2.png" width="325" height="325"
+                    alt="Девушка укладывает волосы стайлером Dyson">
+                </picture>
+                <div class="catalog__card-content">
+                  <h2 class="card__title">Фены</h2>
+                  <button class="card__button">
+                    <p class="card__button-text">Подробнее</p>
+                  </button>
+                </div>
+              </a>
+              <div class="card__hover-bg"></div>
+            </article>
+
+            <article class="catalog__card">
+              <a href="#">
+                <picture>
+                  <source srcset="./images/catalog/catalog-3.webp" type="image/webp">
+                  <img class="card__product-img" src="./images/catalog/catalog-3.png" width="325" height="325"
+                    alt="Девушка укладывает волосы стайлером Dyson">
+                </picture>
+                <div class="catalog__card-content">
+                  <h2 class="card__title">Стайлеры</h2>
+                  <button class="card__button">
+                    <p class="card__button-text">Подробнее</p>
+                  </button>
+                </div>
+              </a>
+              <div class="card__hover-bg"></div>
+            </article>
+
+            <article class="catalog__card">
+              <a href="#">
+                <picture>
+                  <source srcset="./images/catalog/catalog-4.webp" type="image/webp">
+                  <img class="card__product-img" src="./images/catalog/catalog-4.png" width="325" height="325"
+                    alt="Девушка укладывает волосы стайлером Dyson">
+                </picture>
+                <div class="catalog__card-content">
+                  <h2 class="card__title">Выпрямители</h2>
+                  <button class="card__button">
+                    <p class="card__button-text">Подробнее</p>
+                  </button>
+                </div>
+              </a>
+              <div class="card__hover-bg"></div>
+            </article>
+
+            <article class="catalog__card">
+              <a href="#">
+                <picture>
+                  <source srcset="./images/catalog/catalog-1.webp" type="image/webp">
+                  <img class="card__product-img" src="./images/catalog/catalog-1.png" width="325" height="325"
+                    alt="Девушка укладывает волосы стайлером Dyson">
+                </picture>
+                <div class="catalog__card-content">
+                  <h2 class="card__title">Акции</h2>
+                  <button class="card__button">
+                    <p class="card__button-text">Подробнее</p>
+                  </button>
+                </div>
+              </a>
+              <div class="card__hover-bg"></div>
+            </article>
+
+            <article class="catalog__card">
+              <a href="#">
+                <picture>
+                  <source srcset="./images/catalog/catalog-2.webp" type="image/webp">
+                  <img class="card__product-img" src="./images/catalog/catalog-2.png" width="325" height="325"
+                    alt="Девушка укладывает волосы стайлером Dyson">
+                </picture>
+                <div class="catalog__card-content">
+                  <h2 class="card__title">Фены</h2>
+                  <button class="card__button">
+                    <p class="card__button-text">Подробнее</p>
+                  </button>
+                </div>
+              </a>
+              <div class="card__hover-bg"></div>
+            </article>
+
+            <article class="catalog__card">
+              <a href="#">
+                <picture>
+                  <source srcset="./images/catalog/catalog-3.webp" type="image/webp">
+                  <img class="card__product-img" src="./images/catalog/catalog-3.png" width="325" height="325"
+                    alt="Девушка укладывает волосы стайлером Dyson">
+                </picture>
+                <div class="catalog__card-content">
+                  <h2 class="card__title">Стайлеры</h2>
+                  <button class="card__button">
+                    <p class="card__button-text">Подробнее</p>
+                  </button>
+                </div>
+              </a>
+              <div class="card__hover-bg"></div>
+            </article>
+
+            <article class="catalog__card">
+              <a href="#">
+                <picture>
+                  <source srcset="./images/catalog/catalog-4.webp" type="image/webp">
+                  <img class="card__product-img" src="./images/catalog/catalog-4.png" width="325" height="325"
+                    alt="Девушка укладывает волосы стайлером Dyson">
+                </picture>
+                <div class="catalog__card-content">
+                  <h2 class="card__title">Выпрямители</h2>
+                  <button class="card__button">
+                    <p class="card__button-text">Подробнее</p>
+                  </button>
+                </div>
+              </a>
+              <div class="card__hover-bg"></div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------- -->
+
+
+    <section class="hidden__section section">
+      <div class="container hidden__container">
+        <div class="catalog__wrapper">
+          <h1 class="hidden__title-1">Базовый вектор развития</h1>
+          <p class="hidden__text">Фены Dyson универсальны. Они подходят для сушки разных типов волос. Насадки из
+            комплекта помогают создавать
+            укладки на любой вкус. Функциональность девайсов впечатляет не меньше, чем их уникальный дизайн.</p>
+          <h2 class="hidden__title-2">Базовый вектор развития</h2>
+          <p class="hidden__text">Фены Dyson универсальны. Они подходят для сушки разных типов волос. Насадки из
+            комплекта помогают создавать
+            укладки на любой вкус. Функциональность девайсов впечатляет не меньше, чем их уникальный дизайн.</p>
+          <h3 class="hidden__title-3">Базовый вектор развития</h3>
+          <p class="hidden__text">Фены Dyson универсальны. Они подходят для сушки разных типов волос. Насадки из
+            комплекта помогают создавать
+            укладки на любой вкус. Функциональность девайсов впечатляет не меньше, чем их уникальный дизайн.</p>
+          <h4 class="hidden__title-4">Базовый вектор развития</h4>
+          <p class="hidden__text">Фены Dyson универсальны. Они подходят для сушки разных типов волос. Насадки из
+            комплекта помогают создавать
+            укладки на любой вкус. Функциональность девайсов впечатляет не меньше, чем их уникальный дизайн.</p>
+          <h5 class="hidden__title-5">Базовый вектор развития</h5>
+          <p class="hidden__text">Фены Dyson универсальны. Они подходят для сушки разных типов волос. Насадки из
+            комплекта помогают создавать
+            укладки на любой вкус. Функциональность девайсов впечатляет не меньше, чем их уникальный дизайн.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------- -->
+
+
+    <section class="opinions__section section">
+      <div class="container opinions__container">
+        <div class="opinions__wrapper">
+
+          <div class="opinions__content">
+            <h1 class="opinions__title title-md">Мнение экспертов о технике Dyson</h1>
+            <p class="opinions__text">Сегодня многие стилисты и салоны красоты в своей работе используют технику
+              от Dyson.</p>
+            <p class="opinions__text">Несмотря на высокую стоимость, техника Dyson помогает экономить. Мастера
+              тратят меньше времени на сушку и укладку волос, благодаря чему успевают обслужить большее количество
+              клиентов. Также устройства от Dyson потребляют значительно меньше электроэнергии, не теряя свою мощность.
+            </p>
+            <p class="opinions__text">Фены Dyson универсальны. Они подходят для сушки разных типов волос.
+              Насадки из комплекта помогают создавать укладки на любой вкус. Функциональность девайсов впечатляет не
+              меньше, чем их уникальный дизайн.</p>
+            <p class="opinions__text">Ведущие стилисты отмечают, что техника Dyson для ухода за волосами
+              идеально подходят для длительной работы за счет своей эргономичности. А за счет бесшумности инновационного
+              мотора использование устройств стало максимально комфортным.</p>
+          </div>
+
+          <div class="opinions__img">
+            <picture>
+              <source srcset="./images/opinion/opinion-woman.webp" type="image/webp">
+              <img class="opinions__img" src="./images/opinion/opinion-woman.png"
+                alt="Девушка с феном для волос от Dyson" width="700" height="700">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------- -->
+
+    <section id="advantages" class="advantages__section section">
+      <div class="container advantages__container">
+        <div class="advantages__wrapper">
+          <div class="advantages__title title-md">Почему выбирают нас </div>
+          <div class="advantages__grid-cards">
+
+            <article class="advantages__card">
+              <div class="advantages__card-content">
+                <svg class="advantages__card-icon" width="74" height="80">
+                  <use href="./icons/advantages-sprite.svg#cart"></use>
+                </svg>
+                <div class="advantages__text-container">
+                  <h3 class="advantages__card-title">Широкий ассортимент</h3>
+                  <p class="advantages__card-text">Большой выбор техники и аксессуаров</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="advantages__card">
+              <div class="advantages__card-content">
+                <svg class="advantages__card-icon" width="74" height="80">
+                  <use href="./icons/advantages-sprite.svg#cart"></use>
+                </svg>
+                <div class="advantages__text-container">
+                  <h3 class="advantages__card-title">Широкий ассортимент</h3>
+                  <p class="advantages__card-text">Большой выбор техники и аксессуаров</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="advantages__card">
+              <div class="advantages__card-content">
+                <svg class="advantages__card-icon" width="74" height="80">
+                  <use href="./icons/advantages-sprite.svg#cart"></use>
+                </svg>
+                <div class="advantages__text-container">
+                  <h3 class="advantages__card-title">Широкий ассортимент</h3>
+                  <p class="advantages__card-text">Большой выбор техники и аксессуаров</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="advantages__card">
+              <div class="advantages__card-content">
+                <svg class="advantages__card-icon" width="74" height="80">
+                  <use href="./icons/advantages-sprite.svg#cart"></use>
+                </svg>
+                <div class="advantages__text-container">
+                  <h3 class="advantages__card-title">Широкий ассортимент</h3>
+                  <p class="advantages__card-text">Большой выбор техники и аксессуаров</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="advantages__card">
+              <div class="advantages__card-content">
+                <svg class="advantages__card-icon" width="74" height="80">
+                  <use href="./icons/advantages-sprite.svg#cart"></use>
+                </svg>
+                <div class="advantages__text-container">
+                  <h3 class="advantages__card-title">Широкий ассортимент</h3>
+                  <p class="advantages__card-text">Большой выбор техники и аксессуаров</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="advantages__card">
+              <div class="advantages__card-content">
+                <svg class="advantages__card-icon" width="74" height="80">
+                  <use href="./icons/advantages-sprite.svg#cart"></use>
+                </svg>
+                <div class="advantages__text-container">
+                  <h3 class="advantages__card-title">Широкий ассортимент</h3>
+                  <p class="advantages__card-text">Большой выбор техники и аксессуаров</p>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------- -->
+
+    <section class="offers__section section"></section>
+  </main>
+
+  <!-- ------------------------------------------------------- -->
+
+  <footer class="main"></footer>
+
+  <!-- ------------------------------------------------------- -->
+
+  <div class="modal">
+    <div class="modal__window modal-buy" data-modal-window="buy">
+      <button class="modal__close" aria-label="Закрыть" title="Закрыть" data-modal-close>
+        <svg width="24px" height="24px">
+          <use class="" href="./icons/sprite.svg#cross"></use>
+        </svg>
+      </button>
+      <div class="modal__content modal-buy__content">
+        <h3 class="modal-buy__title title-sm">Заявка на заказ</h3>
+        <form action="" class="modal-buy__form">
+          <label for="" class="modal-buy__label">
+            <input class="modal-buy__input" type="text" placeholder="Ваше имя" name="name" required>
+          </label>
+          <label for="" class="modal-buy__label">
+            <input class="modal-buy__input" type="tel" placeholder="Ваш номер телефона" name="phone" required>
+          </label>
+          <label for="" class="modal-buy__label">
+            <input class="modal-buy__input" type="email" placeholder="Ваша почта" name="email" required>
+          </label>
+          <button class="modal-buy__submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------------- -->
+
+</body>
+<script src="./js/3D-card.js"></script>
+<script src="./js/modal.js"></script>
+</html>
