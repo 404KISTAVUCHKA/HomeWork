@@ -1,0 +1,209 @@
+.contact__section {
+  padding: 150px 0 150px;
+  background-color: var(--second-bg-color);
+}
+
+.contact__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 135px;
+}
+
+.contact__field-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: none;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  max-width: 555px;
+  width: 100%;
+}
+
+.field__title {
+  margin-bottom: 50px;
+}
+
+.field-left__input-name {
+  margin-bottom: 30px;
+}
+
+.field-left__input-tel {
+  margin-bottom: 70px;
+}
+
+.contact__input {
+  border: none;
+  border-bottom: 1px solid var(--main-color);
+  background-color: var(--second-bg-color);
+  padding-bottom: 15px;
+  font-size: 18px;
+  width: 100%;
+  color: var(--disabled-color);
+}
+
+.field-left__button {
+  width: 277px;
+}
+
+.contact__button {
+  border-radius: 3px;
+  padding: 10px;
+  height: 64px;
+  background-color: var(--main-color);
+  -webkit-transition: background-color var(--transition-time);
+  -o-transition: background-color var(--transition-time);
+  transition: background-color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .contact__button:hover {
+    background-color: var(--accent-color);
+  }
+}
+
+.field__button-link {
+  font-size: 24px;
+  color: var(--bg-color);
+}
+
+.contact__field-right {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 555px;
+  width: 100%;
+}
+
+.field-right__input-email {
+  margin-bottom: 70px;
+}
+
+.field-right__button {
+  width: 244px;
+  margin-bottom: 35px;
+}
+
+.field-right__button:active {
+  background-color: var(--disabled-color);
+}
+
+
+.field-right__checkbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.field-right__input-checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid var(--main-color);
+  border-radius: 3px;
+  width: 30px;
+  height: 30px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.field-right__input-checkbox::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url(../../icons/Checkbox.svg) no-repeat center;
+  opacity: 0;
+  -webkit-transition: var(--transition-time);
+  -o-transition: var(--transition-time);
+  transition: var(--transition-time);
+}
+
+.field-right__input-checkbox:checked::after {
+  opacity: 1;
+}
+
+.field-right__label-checkbox {
+  padding-left: 16px;
+  line-height: 120%;
+  color: #000;
+}
+
+@media (width <=1400px) {
+  .contact__wrapper {
+    gap: 20px;
+  }
+}
+
+@media (width <=1200px) {
+  .contact__section {
+    padding: 65px 0 70px;
+  }
+
+  .field__title {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .contact__wrapper {
+    gap: 20px;
+  }
+
+  .contact__input {
+    font-size: 12px;
+  }
+
+  .contact__button {
+    padding: 10px 20px;
+    width: 180px;
+    height: 36px;
+  }
+
+  .field__button-link {
+    font-size: 16px;
+  }
+
+  .field-right__button {
+    width: 153px;
+  }
+
+  .field-right__input-checkbox {
+    width: 19px;
+    height: 19px;
+  }
+
+  .field-right__label-checkbox {
+    font-size: 10px;
+  }
+
+  .field-right__input-email,
+  .field-left__input-tel {
+    margin-bottom: 30px;
+  }
+}
+
+@media (width <=600px) {
+  .contact__section {
+    padding: 40px 0 45px;
+  }
+
+  .contact__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 46px;
+  }
+}
