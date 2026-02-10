@@ -1,0 +1,153 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+ .hero__section {
+   background-color: #DDD;
+ }
+
+ .hero__wrapper {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+ }
+
+ .hero__content {
+   max-width: 556px;
+   z-index: 1;
+ }
+
+ .hero__title {
+   font-family: var(--second-family);
+   font-weight: 900;
+   /* 1920-390 */
+   font-size: clamp(24px, 1.15rem + 1.44vw, 46px);
+   line-height: 103%;
+   margin-bottom: 40px;
+ }
+
+ .hero__text {
+   font-weight: 400;
+   /* 1920-390 */
+   font-size: clamp(12px, 0.527rem + 0.92vw, 26px);
+   line-height: 130%;
+   margin-bottom: 90px;
+ }
+
+ .hero__button {
+   border-radius: 3px;
+   padding: 10px 20px;
+   width: 235px;
+   height: 64px;
+   background-color: var(--accent-color);
+   background-color: var(--accent-color);
+   -webkit-transition: background-color var(--transition-time);
+   -o-transition: background-color var(--transition-time);
+   transition: background-color var(--transition-time);
+ }
+@media (any-hover: hover) {
+ .hero__button:hover {
+   background-color: var(--main-color);
+   -webkit-transition: background-color var(--transition-time);
+   -o-transition: background-color var(--transition-time);
+   transition: background-color var(--transition-time);
+ }
+}
+
+ .hero__button:active {
+   background-color: var(--disabled-color);
+   -webkit-transition: background-color 0s;
+   -o-transition: background-color 0s;
+   transition: background-color 0s;
+ }
+
+ .hero__button-text {
+   font-weight: 400;
+   font-size: 24px;
+   color: #fff;
+ }
+
+ .hero__img {
+   max-width: 100%;
+   height: auto;
+ }
+
+ @media (width <=768px) {
+   .hero__title {
+     width: 363px;
+     margin-bottom: 20px;
+   }
+
+   .hero__text {
+     width: 253px;
+     margin-bottom: 40px;
+   }
+
+   .hero__button {
+     width: 141px;
+     height: 36px;
+   }
+
+   .hero__button-text {
+     font-size: 16px;
+   }
+ }
+
+ @media (width <=700px) {
+   .hero__content {
+     margin-bottom: 150px;
+   }
+
+   .hero__wrapper {
+     height: 390px;
+     -webkit-box-align: start;
+         -ms-flex-align: start;
+             align-items: flex-start;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
+   }
+
+   .hero__img {
+     position: absolute;
+     width: 280px;
+     height: 274px;
+     top: 192px;
+     left: 250px;
+   }
+ }
+
+ @media (width <=500px) {
+   .hero__img {
+     left: 110px;
+   }
+ }
+
+ @media (width <=390px) {
+   .hero__title {
+     margin-bottom: 16px;
+     width: 290px;
+   }
+
+   .hero__text {
+     margin-bottom: 30px;
+     width: 170px;
+   }
+
+   .hero__img {
+     top: 163px;
+   }
+ }

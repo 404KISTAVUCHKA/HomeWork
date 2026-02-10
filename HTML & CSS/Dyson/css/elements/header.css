@@ -1,0 +1,145 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.header {
+  background-color: var(--main-color);
+  width: 100%;
+  height: 90px;
+}
+
+.header__position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90px;
+}
+
+.container__burger-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.header__nav {
+  padding-left: 50px;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.nav__link {
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: 20px;
+  color: #fff;
+  -webkit-transition: var(--transition-time);
+  -o-transition: var(--transition-time);
+  transition: var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .nav__link:hover {
+    color: var(--accent-color);
+  }
+
+  .parent--accent:hover {
+    color: var(--accent-color);
+  }
+}
+
+.cart__inner {
+  margin-left: auto;
+}
+
+.parent--accent {
+  color: #fff;
+  -webkit-transition: color var(--transition-time);
+  -o-transition: color var(--transition-time);
+  transition: color var(--transition-time);
+}
+
+
+.daughter--accent {
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+@media (width < 1360px) {
+  .header__nav {
+    display: none;
+  }
+}
+
+@media (width <=768px) {
+  .header {
+    height: 76px;
+  }
+
+  .header__position {
+    height: 76px;
+  }
+
+  .container__burger-logo {
+    gap: 40px;
+  }
+
+  .burger-svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header__logo-img {
+    width: 142px;
+    height: 60px;
+  }
+
+  .cart-svg {
+    width: 31px;
+    height: 31px;
+  }
+}
+
+
+@media (width <=390px) {
+  .header {
+    height: 47px;
+  }
+
+  .header__position {
+    height: 47px;
+  }
+
+  .container__burger-logo {
+    gap: 25px;
+  }
+
+  .burger-svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header__logo-img {
+    width: 94px;
+    height: 39px;
+  }
+
+  .cart-svg {
+    width: 24px;
+    height: 24px;
+  }
+}
