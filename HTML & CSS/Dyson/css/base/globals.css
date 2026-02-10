@@ -15,7 +15,7 @@ html {
 }
 
 .page__body {
-  min-width: 360px;
+  min-width: 390px;
   background-color: var(--bg-color);
 }
 
@@ -67,4 +67,5 @@ img {
 
 .title-sm {
   font-size: 30px;
+
 }
